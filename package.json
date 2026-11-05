@@ -1,0 +1,16 @@
+{
+  "name": "mymovie",
+  "version": "1.0.0",
+  "description": "MyMovie - Movie Discovery and Watchlist Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": ["mymovie", "electron", "movie", "watchlist"],
+  "author": "Nur Elyiana Dalila",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^45.2.2"
+  }
+}

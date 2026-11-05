@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovie - Explore Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h1 class="logo">MY<span>MOVIE</span></h1>
+        <p class="menu-title">MAIN MENU</p>
+        <a href="index.html" class="menu active">Explore Movies</a>
+        <a href="watchlist.html" class="menu">Watchlist</a>
+    </div>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <header>
+            <div>
+                <h2>Explore Movies</h2>
+            </div>
+        </header>
+        <!-- SEARCH SECTION -->
+        <section class="search-container">
+            <input
+                type="text"
+                id="movieSearch"
+                placeholder="Search movie title here..">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Clear</button>
+        </section>
+        <p id="message">Loading movies...</p>
+        <!-- MOVIE RECOMMENDATION -->
+        <section class="recommended-section">
+            <h2>Movie Recommendations</h2>
+            <p>Select your preferred movie genre</p>
+            <select id="recommendationGenre">
+                <option value="">Select Genre</option>
+                <option value="Action">Action</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Horror">Horror</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Sci-Fi">Science-Fiction</option>
+                <option value="Adventure">Adventure</option>
+            </select>
+            <button id="recommendButton">Recommend Movies</button>
+            <button id="clearRecommendationButton">Clear</button>
+            <p id="recommendationMessage"></p>
+        </section>
+        <!-- MOVIE CATALOG -->
+        <section class="movie-section">
+            <h2>EXPLORE TRENDING MOVIES BELOW</h2>
+            <div id="movieResults" class="movie-results"></div>
+        </section>
+    </main>
+    <script src="renderer.js"></script>
+</body>
+</html>

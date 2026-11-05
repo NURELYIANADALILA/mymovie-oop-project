@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovie - My Watchlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h1 class="logo">MY<span>MOVIE</span></h1>
+        <p class="menu-title">MAIN MENU</p>
+        <a href="index.html" class="menu">Discover Movies</a>
+        <a href="watchlist.html" class="menu active">Watchlist</a>
+    </div>
+    <!--  MAIN CONTENT -->
+    <main class="main-content">
+        <header>
+            <div>
+                <h2>Watchlist</h2>
+            </div>
+        </header>
+        <!-- STATISTICS -->
+        <section class="statistics">
+            <div class="stat-card">
+                <p>Total Watchlist Movies</p>
+                <h2 id="totalMovies">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Watched</p>
+                <h2 id="watchedMovies">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Not Watched</p>
+                <h2 id="unwatchedMovies">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Completion Percentage</p>
+                <h2 id="completionRate">0%</h2>
+            </div>
+        </section>
+        <!-- WATCHLIST COLLECTION -->
+        <section class="movie-section">
+            <h2>WATCHLIST MOVIE COLLECTION</h2>
+            <p id="watchlistMessage"></p>
+            <div id="watchlistResults" class="movie-results"></div>
+        </section>
+    </main>
+    <script src="watchlist.js"></script>
+</body>
+</html>
