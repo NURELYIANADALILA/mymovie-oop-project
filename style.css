@@ -14,22 +14,40 @@ body {
 .sidebar {
     width: 220px;
     height: 100vh;
-    background: #111;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("assets/images/film-strip.jpg") center / cover no-repeat;
     padding: 30px 20px;
     position: fixed;
     border-right: 1px solid #333;
 }
+/* LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 55px;
+}
+.logo-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
 .logo {
     color: #fff;
-    font-size: 25px;
-    margin-bottom: 55px;
+    font-size: 23px;
+    margin: 0;
 }
 .logo span {
     color: #D00000;
 }
+/* SIDEBAR MENU */
 .menu-title {
     color: #aaa;
-    font-size: 11px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
     margin-bottom: 18px;
 }
 .menu {
@@ -40,8 +58,7 @@ body {
     margin-bottom: 10px;
     border-radius: 5px;
 }
-.menu.active,
-.menu:hover {
+.menu.active, .menu:hover {
     background: #C00000;
     color: #fff;
 }
@@ -95,9 +112,7 @@ header h2 {
     border-color: #C00000;
 }
 /* BUTTONS */
-.search-container button,
-.recommended-section button,
-#clearRecommendationButton {
+.search-container button, .recommended-section button {
     padding: 11px 20px;
     background: #C00000;
     color: #fff;
@@ -106,26 +121,23 @@ header h2 {
     cursor: pointer;
     font-weight: bold;
 }
-.search-container button:hover,
-.recommended-section button:hover,
-#clearRecommendationButton:hover {
+.search-container button:hover, .recommended-section button:hover {
     background: #8B0000;
 }
-#clearButton,
-#clearRecommendationButton {
+#clearButton, #clearRecommendationButton {
     background: #fff;
     color: #C00000;
     border: 1px solid #C00000;
+    padding: 11px 20px;
+    border-radius: 4px;
+    cursor: pointer;
 }
-#clearButton:hover,
-#clearRecommendationButton:hover {
+#clearButton:hover, #clearRecommendationButton:hover {
     background: #C00000;
     color: #fff;
 }
 /* MESSAGES */
-#message,
-#recommendationMessage,
-#watchlistMessage {
+#message, #recommendationMessage, #watchlistMessage {
     color: #fff;
     margin: 12px 0;
     font-size: 13px;
@@ -135,8 +147,12 @@ header h2 {
 }
 /* RECOMMENDATION SECTION */
 .recommended-section {
-    background: #151515;
-    padding: 18px;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+        url("assets/images/clapperboard.png") center / cover no-repeat;
+    padding: 22px;
     margin: 20px 0 25px;
     border: 1px solid #333;
     border-radius: 5px;
@@ -147,7 +163,7 @@ header h2 {
     margin-bottom: 12px;
 }
 .recommended-section p {
-    color: #ccc;
+    color: #fff;
     font-size: 13px;
     margin-bottom: 12px;
 }
@@ -159,13 +175,17 @@ header h2 {
     border-radius: 4px;
     margin-right: 8px;
 }
+.recommended-section h2, .recommended-section p, .recommended-section select, .recommended-section button {
+    position: relative;
+    z-index: 1;
+}
 /* MOVIE SECTION */
 .movie-section h2 {
     color: #fff;
     font-size: 20px;
     margin-bottom: 18px;
 }
-/* MOVIE GRID */
+/* MOVIE GRID AND CARDS */
 .movie-results {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -211,8 +231,7 @@ header h2 {
 .movie-card button:hover {
     background: #8B0000;
 }
-.movie-card button:disabled,
-.movie-details button:disabled {
+.movie-card button:disabled, .movie-details button:disabled {
     background: #777;
     cursor: not-allowed;
 }
@@ -224,13 +243,13 @@ header h2 {
     margin: 25px 0;
 }
 .stat-card {
-    background: #111111;
+    background: #111;
     border: 1px solid #C00000;
     border-radius: 5px;
     padding: 25px;
 }
 .stat-card p {
-    color: #FFFFFF;
+    color: #fff;
     font-size: 14px;
     margin-bottom: 15px;
 }
@@ -292,8 +311,7 @@ header h2 {
     border: none;
     cursor: pointer;
 }
-.movie-details button:hover,
-.close-modal:hover {
+.movie-details button:hover, .close-modal:hover {
     background: #8B0000;
 }
 .close-modal {
