@@ -55,49 +55,17 @@ MyMovie/
 ├── .gitignore
 └── README.md
 ```
-## 5. Installation and Setup
-### Requirements
-- Node.js and npm
-- Git
-- TMDB API Key (v3)
-
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/NURELYIANADALILA/mymovie-oop-project.git
-```
-### Step 2: Open the Project Folder
-```bash
-cd mymovie-oop-project
-```
-### Step 3: Install Dependencies
-```bash
-npm install
-```
-### Step 4: Configure TMDB API Key
-1. Copy `config.example.js`.
-2. Rename the copied file to `config.js`.
-3. Open `config.js`.
-4. Replace the placeholder with your own TMDB API Key.
-Example:
-```javascript
-const API_KEY = 'YOUR_TMDB_API_KEY';
-module.exports = API_KEY;
-```
-### Step 5: Run the Application
-```bash
-npm start
-```
-## 6. Screenshots
+## 5. Screenshots
 ### Discover Movies
 ![Discover Movies](screenshots/discover-movies.png)
 ### Movie Details
 ![Movie Details](screenshots/movie-details.png)
 ### My Watchlist
 ![My Watchlist](screenshots/my-watchlist.png)
-## 7. API Attribution
+## 6. API Attribution
 Movie information is retrieved from [The Movie Database (TMDB)](https://www.themoviedb.org/).
 This product uses the TMDB API but is not endorsed or certified by TMDB.
-## 8. GitHub Repository
+## 7. GitHub Repository
 Repository URL:
 https://github.com/NURELYIANADALILA/mymovie-oop-project
 ---
