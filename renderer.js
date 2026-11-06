@@ -1,4 +1,4 @@
-const API_KEY = require('./config');
+const API_KEY = typeof module !== 'undefined' && module.exports ? require('./config') : window.TMDB_API_KEY;
 const searchButton = document.getElementById('searchButton');
 const clearButton = document.getElementById('clearButton');
 const movieSearch = document.getElementById('movieSearch');
